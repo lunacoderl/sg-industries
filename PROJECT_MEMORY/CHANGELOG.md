@@ -4,6 +4,16 @@ All notable changes, updates, additions, and deletions are recorded here chronol
 
 ---
 
+## [2026-10-11] — Git Repository Initialization & Remote Configuration for Collaboration
+
+### Summary
+- Initialized local Git repository on branch `main`.
+- Staged all project files and created initial commit `1ee1287` (`feat: complete SG Industry website with 6 services, proprietor section, and uncropped assets`).
+- Configured remote `origin` to `https://github.com/lunacoderl/sg-industries.git` for collaborative deployment.
+- Launched `git push -u origin main` with Git Credential Manager authentication.
+
+---
+
 ## [2026-10-11] — Major Feature Upgrades: Preloader, Fixed Parallax Backgrounds, Proprietor Section, 6 Services & Font Modernization
 
 ### Summary

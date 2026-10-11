@@ -15,7 +15,9 @@
   5. Flange Rings & Heavy Base Plates (`/services/flange-rings-baseplates`)
   6. Batch & Custom Sheet Metal Fabrication (`/services/custom-metal-fabrication`)
 - **Verified Machinery:** APEX FLCM 2584 GS-G20 CNC Fiber Laser Cutting Machine Bed & CNC Press Brake
-- **Current Status:** Major Upgrades Completed — Preloader, Fixed Parallax Backgrounds, Skeleton Loading, Modern Fonts, Uncropped Gallery, Proprietor Profile + Modal Business Cards, 6 Dynamic Services, Clean Build Succeeded (0 errors).
+- **Git Repository:** `https://github.com/lunacoderl/sg-industries.git` (Remote `origin`, Branch `main`)
+- **Git User:** `lunacoderj` (`jagadheshbellane@gmail.com`) — Collaborator
+- **Current Status:** Repository initialized, initial commit `1ee1287` created, remote set to `https://github.com/lunacoderl/sg-industries.git`, push underway with Git Credential Manager.
 
 ## Tech Stack
 - **Framework:** React 19 + Vite 8 + TypeScript
