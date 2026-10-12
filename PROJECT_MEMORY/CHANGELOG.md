@@ -4,6 +4,22 @@ All notable changes, updates, additions, and deletions are recorded here chronol
 
 ---
 
+## [2026-10-13] — Uncropped Full-Length Proprietor Portrait & Executive Leadership Expansion
+
+### Summary
+- **Updated Proprietor Photograph**: Integrated user's updated high-resolution photograph (`1122x1402px`, 2.0MB) at `public/images/team/masada-siva-srinu.jpg`.
+- **Zero-Cropping Picture Frame**: Redesigned the portrait frame in `ProprietorSection.tsx` so the photo is 100% visible across its entire length and width without clipping or cutoffs. Removed the bottom badge overlay that previously covered the lower portion of his photo, moving all titles and metadata to a clean, dedicated caption panel underneath.
+- **Interactive Full-Resolution Lightbox**: Added a dedicated click-to-zoom modal for the portrait so clients and partners can inspect the high-resolution photo in full size.
+- **Comprehensive Executive Profile**: Expanded `companyData.proprietor` in `src/data/company.ts` with:
+  - Designation: *Managing Director & Chief Technical Head*
+  - 12+ Years Experience in CNC Fiber Laser profiling and press brake bending
+  - Detailed leadership narrative and bio explaining his hands-on machine parameter setup and drawing review
+  - 4 Technical Pillars: Direct CAD/DXF Feasibility Review, APEX CNC Laser Parameter Control, Press Brake Tooling & K-Factor Calculations, and 100% On-Floor Inspection
+  - 4 Key Statistics: 12+ Years Experience, APEX 2584 Bed Capacity, 99% Repeat Client Trust, ±0.05mm Repeatable Tolerance
+- **Verified Build**: Verified production build (`tsc -b && vite build`) succeeded with 0 errors in 8.16s.
+
+---
+
 ## [2026-10-11] — Git Repository Initialization & Remote Configuration for Collaboration
 
 ### Summary

@@ -16,8 +16,7 @@
   6. Batch & Custom Sheet Metal Fabrication (`/services/custom-metal-fabrication`)
 - **Verified Machinery:** APEX FLCM 2584 GS-G20 CNC Fiber Laser Cutting Machine Bed & CNC Press Brake
 - **Git Repository:** `https://github.com/lunacoderl/sg-industries.git` (Remote `origin`, Branch `main`)
-- **Git User:** `lunacoderj` (`jagadheshbellane@gmail.com`) — Collaborator
-- **Current Status:** Repository initialized, initial commit `1ee1287` created, remote set to `https://github.com/lunacoderl/sg-industries.git`, push underway with Git Credential Manager.
+- **Current Status:** Uncropped full-length & full-width proprietor portrait frame implemented for Masada Siva Srinu, expanded executive leadership profile with technical pillars & stats, verified production build clean (0 errors).
 
 ## Tech Stack
 - **Framework:** React 19 + Vite 8 + TypeScript
