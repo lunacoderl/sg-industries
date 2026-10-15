@@ -1,14 +1,15 @@
 import React from "react";
 import { companyData } from "../data/company";
+import { siteSeo } from "../siteSeo";
 
 export const LocalBusinessSchema: React.FC = () => {
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: companyData.name,
-    image: "https://sgindustry.in/images/hero/hero-workshop.jpg",
-    "@id": "https://sgindustry.in/#localbusiness",
-    url: "https://sgindustry.in",
+    image: `${siteSeo.baseUrl}/images/hero/hero-workshop.jpg`,
+    "@id": `${siteSeo.baseUrl}/#localbusiness`,
+    url: siteSeo.baseUrl,
     telephone: companyData.phone,
     priceRange: "₹₹",
     address: {

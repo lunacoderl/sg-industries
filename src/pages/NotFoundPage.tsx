@@ -10,6 +10,7 @@ export const NotFoundPage: React.FC = () => {
         title="404 — Page Not Found | SG Industry"
         description="The requested page could not be found. Return to SG Industry homepage."
         canonicalPath="/404"
+        noIndex={true}
       />
 
       <div className="min-h-[70vh] flex items-center justify-center py-20 px-4 bg-[#FFF9F0]">

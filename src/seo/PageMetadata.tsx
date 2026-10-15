@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
+import { siteSeo } from "../siteSeo";
 
 interface PageMetadataProps {
   title?: string;
@@ -7,6 +8,7 @@ interface PageMetadataProps {
   canonicalPath?: string;
   ogType?: string;
   ogImage?: string;
+  noIndex?: boolean;
 }
 
 export const PageMetadata: React.FC<PageMetadataProps> = ({
@@ -15,14 +17,16 @@ export const PageMetadata: React.FC<PageMetadataProps> = ({
   canonicalPath = "/",
   ogType = "website",
   ogImage = "/images/hero/hero-workshop.jpg",
+  noIndex = false,
 }) => {
-  const siteUrl = "https://sgindustry.in";
-  const canonicalUrl = `${siteUrl}${canonicalPath}`;
+  const siteUrl = siteSeo.baseUrl;
+  const canonicalUrl = `${siteUrl}${canonicalPath.startsWith('/') ? canonicalPath : `/${canonicalPath}`}`;
 
   return (
     <Helmet>
       <title>{title}</title>
       <meta name="description" content={description} />
+      <meta name="robots" content={noIndex ? "noindex, nofollow" : "index, follow"} />
       <link rel="canonical" href={canonicalUrl} />
 
       {/* Open Graph / Facebook */}
@@ -30,13 +34,13 @@ export const PageMetadata: React.FC<PageMetadataProps> = ({
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:url" content={canonicalUrl} />
-      <meta property="og:image" content={`${siteUrl}${ogImage}`} />
+      <meta property="og:image" content={`${siteUrl}${ogImage.startsWith('/') ? ogImage : `/${ogImage}`}`} />
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={`${siteUrl}${ogImage}`} />
+      <meta name="twitter:image" content={`${siteUrl}${ogImage.startsWith('/') ? ogImage : `/${ogImage}`}`} />
     </Helmet>
   );
 };
